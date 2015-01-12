@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Fri Jul 11 14:15:42 CST 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0147-2410-211e-000006a14608 
+on database directory /Applications/apache-flume-1.5.0-bin/conf/metastore_db with class loader sun.misc.Launcher$AppClassLoader@46bd530 
+Loaded from file:/usr/local/Cellar/hive/0.13.1/libexec/lib/derby-10.10.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_60-b19
+user.dir=/Applications/apache-flume-1.5.0-bin/conf
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.9.4
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
