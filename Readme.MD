@@ -326,4 +326,18 @@ http://blog.sina.com.cn/s/blog_5ca749810101ceqz.html
 
 
 
+flume and mongodb 整合
 
+MongoSink请到这里下载：https://github.com/leonlee/flume-ng-mongodb-sink
+MongoSink我简单说一下，只需要把他打成jar包丢到/home/flume/lib里面就行了，当然别忘了把mongodb驱动也丢进去。以后你要是开发其他扩展包都是丢到lib里面就好
+好，那么我们就清楚了，flume的作用就是从source获取数据，存入channel缓冲队列，最后由sink放入永久存储
+
+现目前我们主要是解决了日志数据不必直接写mongo库，只要把IP和端口告知其他项目团队，他们直接往这里发送数据就行了。
+
+cd /Applications/apache-flume-1.5.0-bin/
+bin/flume-ng agent --conf conf --conf-file conf/flume.conf.mongodb --name agent2 -Dflume.root.logger=INFO,console
+
+启动测试
+telnet 127.0.0.1 44444
+输入数据
+{ "name": "cxh", "sex": "man" }
